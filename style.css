@@ -3,47 +3,60 @@ body {
     background: color #fdf6e3;
     margin: 0;
     padding: 0;
+    font-family: "Montserrat", sans-serif;
 }
 
-h1 {
+.top {
     text-align: center;
-    color: #1a6b72;
+}
+
+.title {
+    color: #ffffff;
+    background-color: #1a6b72;
     font-size: 100px;
-    line-height: 50px;
+    line-height: 100px;
+    margin-top: 0;
+    padding-top: 20px;
     margin-bottom: 0;
     padding-bottom: 50px;
+    font-weight: 520;
+    gap: 15px;
 }
 
-h2 {
-    text-align: center;
+.title::after {
+    content: "";
+    display: block;
+    background: #fdf6e3;
+    height: 2px;
+    width: 75%;
+    margin: 4rem auto 0;
+}
+
+.arabic-title {
     color: #c9a84c;
     background-color: #1a6b72;
     font-size: 100px;
-    line-height: 150px;
+    line-height: 100px;
     margin-top: 0;
-    padding-top: 0;
+    padding-top: 20px;
     margin-bottom: 0;
-    padding-bottom: 0;
+    padding-bottom: 30px;
 }
 
-header {
+.navigation {
     background-color: #e8f4f5;
     margin-top: 0;
     padding-bottom: 0;
     line-height: 75px;
 }
 
-nav {
-    text-align: center;
-}
-
-a {
+.navigation a {
     color:#1a6b72;
     text-decoration: none;
     padding: 14px 16px;
-    font-size: 50px;
+    font-size: 30px;
 }
 
-a:hover {
+.navigation a:hover {
     color: black;
 }
