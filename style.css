@@ -29,7 +29,7 @@ body {
     background: #fdf6e3;
     height: 2px;
     width: 75%;
-    margin: 4rem auto 0;
+    margin: 3rem auto 0;
 }
 
 .arabic-title {
@@ -38,9 +38,9 @@ body {
     font-size: 100px;
     line-height: 100px;
     margin-top: 0;
-    padding-top: 20px;
+    padding-top: 0px;
     margin-bottom: 0;
-    padding-bottom: 30px;
+    padding-bottom: 20px;
 }
 
 .navigation {
@@ -48,6 +48,26 @@ body {
     margin-top: 0;
     padding-bottom: 0;
     line-height: 75px;
+    text-align: center;
+}
+
+.folder {
+    list-style: none;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-top: 0;
+}
+
+.subfolder {
+    list-style: none;
+    opacity: 0;
+    visibility: hidden;
+    top: 100%;
+    position: absolute;
+    display: block;
+    margin: 0;
+    padding: 0;
 }
 
 .navigation a {
@@ -59,4 +79,20 @@ body {
 
 .navigation a:hover {
     color: black;
+}
+
+.newsletter {
+    position: relative;
+    display: inline-block;
+}
+
+.newsletter:hover .subfolder,
+.newsletter:focus-within .subfolder {
+    opacity: 1;
+    visibility: visible;
+    background-color: #e8f4f5;
+}
+
+.subfolder a {
+    font-size: 15px;
 }
