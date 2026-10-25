@@ -91,6 +91,8 @@ body {
     opacity: 1;
     visibility: visible;
     background-color: #e8f4f5;
+    padding-right: 10px;
+    padding-left: 10px;
 }
 
 .subfolder a {
